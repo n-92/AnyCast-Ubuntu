@@ -50,5 +50,4 @@ In one terminal screen, you can execute the following commands depending on what
 -c:a aac -b:a 320k -ar 48000 -ac 2 -profile:a aac_low \
 -f mpegts -listen 1 http://0.0.0.0:8090/streamvideo`
 
-## Once you have any of the streaming commands running via ffmpeg, you can run the python scripts on another terminal. 
-## There is a delay of about 4-7 seconds for the video streaming to the dongle. 
+## Once you have any of the streaming commands running via ffmpeg, you can run the python scripts on another terminal. There is a delay of about 4-7 seconds for the video streaming to the dongle. Also, you might need to add the port to your firewall rules using a tool like ufw. For my own testing, I simply disabled it using `ufw disable`
